@@ -30,11 +30,22 @@ export default function Slider(  ) {
 	console.log("importantEvents", `/images/event${sliderIndex}.jpg`, checkActive(1) );
 	
 	return (
-		<>
-			<SliderBtn />
+		<div className={sliderStyle.slider}>
+			{/*<SliderBtn />
 			<div className={sliderStyle.slider}>
 					<Image key={sliderIndex} src={`/images/event${sliderIndex}.jpg`} layout="fill" className={sliderIndex.image}/>
+			</div>*/}
+			<div className={sliderStyle.slider1} >
+				<Image src={"/images/event0.jpg"} width={100} height={200} />
 			</div>
-		</>
+			<div className={sliderStyle.slider2} >
+				<Image src={"/images/event1.jpg"} width={100} height={200} />
+			</div>
+			<div className={sliderStyle.slider1} >
+				<Image src={"/images/event2.jpg"} width={100} height={200} />
+			</div>
+
+
+		</div>
 	)
 }

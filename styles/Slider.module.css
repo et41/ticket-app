@@ -1,11 +1,9 @@
 .slider {
 	position: absolute;
-	top: 80px;
+	display: flex;
 	height: 250px;
 	left: 10%;
-	width: 80%;
-	margin-top: 10px;
-	z-index: 0;
+	gap: 10px;
 }
 
 .image {
