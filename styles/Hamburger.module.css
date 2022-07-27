@@ -1,0 +1,60 @@
+.hamburger {
+	width: 2rem;
+	height: 2rem;
+	display: flex;
+	justify-content: space-around;
+	flex-flow: column nowrap;
+	z-index: 10;
+}
+
+.burger {
+	width: 2rem;
+	height: 0.25rem;
+	border-radius: 10px;
+	background-color: black;
+	transform-origin: 1px;
+	transition: all 0.3s linear;
+}
+
+.burger1true {
+	transform: rotate(45deg);
+	background-color: pink;
+}
+
+.burger1false {
+	transform: rotate(0);
+	background-color: pink;
+
+}
+
+
+.burger2true {
+	transform: rotate(100%);
+	background-color: pink;
+	opacity: 0;
+}
+
+.burger2false {
+	transform: rotate(0);
+	background-color: pink;
+	opacity: 1;
+
+}
+
+.burger3true {
+	transform: rotate(45deg);
+	background-color: pink;
+	opacity: 0;
+}
+
+.burger3false {
+	transform: rotate(0);
+	background-color: pink;
+	opacity: 1;
+
+}
+
+
+
+
+

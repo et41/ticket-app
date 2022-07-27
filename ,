@@ -1,0 +1,25 @@
+import sliderStyle from "../../styles/Slider.module.css";
+import Image from "next/image";
+import data from "../../eventData.json";
+
+
+export default function Slider(  ) {
+
+	const importantEvents = [];
+	for (let i = 0; i < 4; i++) {
+		importantEvents.push(data[i].images.huge);
+	};
+
+	const eventsImages = 
+
+	console.log("importantEvents", importantEvents, importantEvents[0]);
+	
+	return (
+		<div className={sliderStyle.slider}>
+
+			<Image src={`/images/event0.jpg`} layout="fill"/>
+
+
+		</div>
+	)
+}
