@@ -3,7 +3,7 @@
 	justify-content: center;
 	border: none;
 	border-radius: 50%;
-	padding-top: 400px;
+	padding-top: 45vh;
 }
 
 .searchbar input {
@@ -18,6 +18,9 @@
 @media (max-width:763px) {
 	.searchbar input {
 		width: 90%;
+	}
+	.searchbar {
+		padding-top: 300px;
 	}
 }
 
