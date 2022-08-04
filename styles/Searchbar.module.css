@@ -1,26 +1,23 @@
 .searchbar {
-	display: flex;
-	justify-content: center;
-	border: none;
-	border-radius: 50%;
-	padding-top: 45vh;
+	margin: 1rem 0 1rem 0;
 }
 
 .searchbar input {
-	width: 80%;
-	border-radius: 20px;
-	border: none;
 	border: 1px solid black;
-	padding: 10px;
 	z-index: 1;
 }
 
 @media (max-width:763px) {
-	.searchbar input {
-		width: 90%;
-	}
 	.searchbar {
-		padding-top: 300px;
+		width:100% ;
+		display: flex;
+	}
+	.searchbar input {
+		width: 350px;
+		margin: auto;
+		padding: 10px;
+		justify-content: center;
+		align-items: center;
 	}
 }
 

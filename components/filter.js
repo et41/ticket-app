@@ -7,8 +7,9 @@ export default function Filter () {
 	return(
 		<div className={filterStyle.filter}>
 			<LocationFilter />
-			<DateFilter />
 			<CategoryFilter />
+
+			<DateFilter />
 		</div>
 	)
 }
