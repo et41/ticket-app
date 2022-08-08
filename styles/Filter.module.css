@@ -7,7 +7,7 @@
 .categoryFilter, .dateFilter, .locationFilter {
 	font-size: 12px;
 	border: 1px solid black;
-	min-width: 90%;
+	width: 90%;
 	color:black;
 	background-color: white;
 	padding: 16px 12px;
@@ -17,7 +17,7 @@
 
 @media (max-width: 763px) {
 	.filter {
-		margin-top: 2rem;
+		margin-top: 0.6rem;
 		flex-direction: column;
 		gap: 0;
 	}
@@ -29,6 +29,5 @@
 		height: 3rem;
 		color:#192024;
 		font-weight: 600;
-		width: 350px;
 	}
 }

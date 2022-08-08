@@ -1,23 +1,61 @@
 .searchbar {
 	margin: 1rem 0 1rem 0;
+	border: 1px solid black;
+	align-items: center;
+	background-color: white;
+	display: flex;
+	margin: auto;
+	margin-top: 1rem;
+	width: 90%;
+	height: 3.2rem;
 }
 
 .searchbar input {
-	border: 1px solid black;
+	border: none;
+	height: 3rem;
 	z-index: 1;
+	width: 100%;
 }
+
+.searchbar input:focus {
+	outline: none;
+}
+
+.icon {
+	color: rgb(100, 100, 100) ;
+	font-size: 2rem;
+	z-index:2;
+}
+
+.searchFull {
+	display: fixed;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	margin:0;
+	padding: 0;
+	top: 4rem;
+	background-color: red;
+	z-index: 2;
+}
+
+.active {
+	position: absolute;
+	position: fixed;
+	z-index: 4;
+	width: 100vw;
+	margin: 0;
+	top: 0;
+	height: 4.2rem;
+}
+
+.active input {
+	font-size: 1.2rem;
+}
+
 
 @media (max-width:763px) {
 	.searchbar {
-		width:100% ;
-		display: flex;
-	}
-	.searchbar input {
-		width: 350px;
-		margin: auto;
-		padding: 10px;
-		justify-content: center;
-		align-items: center;
 	}
 }
 

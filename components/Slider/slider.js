@@ -72,29 +72,31 @@ export default function Slider(  ) {
 		}
 	}
 
-	console.log("scrolled", scrolled)
 	return (
 		<div id="slider" className={sliderStyle.slider}>
+			<h2>Popular Tickets</h2>
 		<div onClick={scrollHandlerToLeft} className={sliderStyle.slideBarLeft}	 >
 			<a className={`${sliderStyle.arrow} ${sliderStyle.prev}`}></a>
 		</div>
 		{
 			importantEventsData.map((e, i)=> {
 				return (
-				<div key={i} onClick={() => hoverHandler(0)} 
-					className={`${sliderStyle.slider1}  ${isHover[i] ? sliderStyle.active : sliderStyle.inactive}`}>
+				<div key={i}
+					onClick={() => hoverHandler(0)} 
+					className={`${sliderStyle.slider1}  ${isHover[i] ? sliderStyle.active : sliderStyle.inactive}`}
+				>
 					<img src={`${e.images.huge}`} className={`${sliderStyle.sliderImage1}`}/>
-				<div className={sliderStyle.content}>
-					<p>{e.title}</p>
-					<p className={sliderStyle.address}>{e.address}</p>
-				</div>
+					<div className={sliderStyle.content}>
+						<p>{e.title}</p>
+						<p className={sliderStyle.address}>{e.address}</p>
+					</div>
 				</div>
 					)
 			})
-			}
-			<div onClick={scrollHandlerToRight} className={sliderStyle.slideBarRight}>
+		}
+		<div onClick={scrollHandlerToRight} className={sliderStyle.slideBarRight}>
 				<div className={`${sliderStyle.arrow} ${sliderStyle.next}`}></div>
 			</div>
 		</div>
-	)
+	) 
 }
