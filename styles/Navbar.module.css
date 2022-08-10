@@ -65,10 +65,13 @@
 	}
 }
 
-@media (min-width: 767px) {
+@media (min-width: 760px) {
 	.nav {
 		grid-template-columns: 0.5fr 2fr;
 		padding-right: 30px;
+	}
+	.nav a {
+		display: none;
 	}
 
 }

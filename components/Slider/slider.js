@@ -10,7 +10,6 @@ export default function Slider(  ) {
 	const [sliderIndex, setSliderIndex] = useState(0);
 	const [isHover, setIsHover] = useState({0:true, 1:false, 2:false, 3:false, 4:false});
 	const [scrolled, setScrolled] = useState(0);
-	
 
 	const checkActive = (index) => {
 		if( sliderIndex === index ) {
@@ -19,7 +18,7 @@ export default function Slider(  ) {
 			return "image"
 		}
 	}
-	console.log("IMPORTANT", importantEventsData)
+
 	const clickHandler = () => {
 		console.log("clickHandler")
 		setSliderIndex(prev => prev + 1)
@@ -32,11 +31,9 @@ export default function Slider(  ) {
 			...isHover,
 			[index]: !isHover[index]
 		}
-		console.log("hover", newHover)
 		setIsHover(newHover)
 	}
 
-	console.log("isHover", isHover)
 	const scrollHandlerToRight = (e) => {
 		let el = document.getElementById("slider")
 		el.scroll({
@@ -51,15 +48,12 @@ export default function Slider(  ) {
 			setScrolled(scrolled + 400)
 		}
 
-
-		console.log("scrollHandler", el.scrollWidth - el.clientWidth, el.scrollLeft)
 	}
 
 	const scrollHandlerToLeft = (e) => {
 
 		let el = document.getElementById("slider")
 
-		console.log("scrollHandler", el.scrollWidth - el.clientWidth, el.scrollLeft)
 		el.scroll({
 			left : scrolled - 400,
 			behavior: "smooth",
@@ -91,7 +85,7 @@ export default function Slider(  ) {
 						<p className={sliderStyle.address}>{e.address}</p>
 					</div>
 				</div>
-					)
+				)
 			})
 		}
 		<div onClick={scrollHandlerToRight} className={sliderStyle.slideBarRight}>

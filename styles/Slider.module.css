@@ -153,21 +153,31 @@ transition: width .1s ease-in-out;
 	justify-content: center;
 }
 
-@media (min-width:768px) {
+@media (min-width:763px) {
 	.slider1, .slider2, .slider3, .slider4, .slider5 {
-		width: 25vw;
-		height: 85%;
+		flex-direction: column;
+		flex: 0 0 auto !important;
+		width: 30%;
 		flex: 0 0 auto;
 		/*opacity: 0.2;*/
 	}
-	.slider {
-		height: 40vh;
+
+	.sliderImage0, .sliderImage1, .sliderImage2, .sliderImage3, .sliderImage4 {
+		height:auto;	
 	}
+	
+	.slider {
+		display:flex ;
+	}
+
+	
 	.active {
 		opacity:1;
-		height: 95%;
-		width: 50%;
+		width: 35%;
 		transition: width 1s, height 1s;
+	}
+	.arrow.prev {
+		left:500px;
 	}
 	
 }
