@@ -9,6 +9,7 @@ const nextConfig = {
 module.exports = {
 	nextConfig,
 	images: {
-		domains: ['seatgeek.com']
-	}
+		domains: ['seatgeek.com'],
+	},
+
 }
