@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import Searchbar from "../components/searchbar"
 import Filter from "../components/filter"
 import Slider from '../components/Slider/slider'
+import Events from '../components/Events/events'
 
 export default function Home() {
   return (
@@ -27,8 +28,9 @@ export default function Home() {
 			 <Searchbar />
 			</div>
 			<div className={styles.rightsection}>
-
+				<Events />
 				<Slider/>
+
 			</div>
 			</div>
 

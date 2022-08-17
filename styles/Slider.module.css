@@ -167,7 +167,7 @@ transition: width .1s ease-in-out;
 	}
 	
 	.slider {
-		display:flex ;
+		display: none;
 	}
 
 	
@@ -189,6 +189,8 @@ transition: width .1s ease-in-out;
 		margin: 10px auto;
 
 	}
+
+
 
 	.slider1, .slider2, .slider3, .slider4, .slider5 {
 		transition: width 1s, height 1s;

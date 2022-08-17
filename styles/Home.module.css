@@ -10,7 +10,6 @@
 }
 
 .leftsection {
-	display: grid;
 }
 
 .rightsection {
@@ -32,10 +31,10 @@
 		grid-row: 2;
 	}
 	.maincontent {
-		grid-template-columns: 20% auto;
+		grid-template-columns: 100% auto;
 	}
 	.leftsection {
-		max-width: 200px;
+		margin-top: 3rem;
 	}
 }
 
